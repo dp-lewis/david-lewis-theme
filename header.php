@@ -13,5 +13,13 @@
 	<?php wp_head(); ?>
 </head>
 <body class="antialiased">
-<div>David Lewis</div>
-<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+<nav
+      class="fixed w-full bottom-0 left-0 flex items-center justify-center text-white"
+    >
+      <a href="index.html" class="p-4">Home</a>
+      <a href="article.html" class="p-4">Dev & Design</a>
+      <a href="article.html" class="p-4">Community</a>
+    </nav>
+<?php 
+// wp_nav_menu( array( 'theme_location' => 'header-menu' ) );
+ ?>
