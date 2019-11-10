@@ -1,3 +1,10 @@
+/*
+Theme Name: David Lewis Theme
+Author: David Lewis
+Description: Tailwind based Theme
+Version: 0.0.1
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
