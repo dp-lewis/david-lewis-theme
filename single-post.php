@@ -1,3 +1,6 @@
+<?php
+get_header();
+?>
 <article class="max-w-2xl m-auto p-4 pb-24">
       <header class="mb-8">
             <div class="mb-5 inline-block text-sm font-medium bg-blue-500 py-1 px-2 rounded text-blue-100 align-middle">Community</div>
@@ -35,3 +38,5 @@
         work to find a solution to problems. Here’s how we played it:
       </p>
     </article>
+    <?php
+    get_footer();
