@@ -1,4 +1,4 @@
-<article class="bg-white w-3/5 flex-grow-0 md:flex-grow-1 flex-shrink-0 md:flex-shrink-1 mr-3">
+<article class="bg-white w-3/5 md:w-2/5 flex-grow-0 md:flex-grow-1 flex-shrink-0 md:flex-shrink-1 mr-3">
     <?php if (has_post_thumbnail( $post->ID ) ) { ?>
 		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 		<img src="<?php echo $image[0]; ?>" class="w-full" />
