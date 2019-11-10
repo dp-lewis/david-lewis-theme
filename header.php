@@ -14,11 +14,11 @@
 </head>
 <body class="antialiased">
 <nav
-      class="fixed w-full bottom-0 left-0 flex items-center justify-center text-white"
+      class="fixed z-10 w-full bottom-0 left-0 flex items-center justify-center text-white"
     >
-      <a href="index.html" class="p-4">Home</a>
-      <a href="article.html" class="p-4">Dev & Design</a>
-      <a href="article.html" class="p-4">Community</a>
+      <a href="/" class="p-4">Home</a>
+      <a href="/#dev" class="p-4">Dev & Design</a>
+      <a href="/#community" class="p-4">Community</a>
     </nav>
 <?php 
 // wp_nav_menu( array( 'theme_location' => 'header-menu' ) );
