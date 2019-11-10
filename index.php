@@ -1,6 +1,8 @@
 <?php
 get_header();
-
+?>
+<div class="font-display p-4 uppercase text-center text-xl">David Lewis</div>
+<?php
 $latestPost = get_posts( array(
     'posts_per_page' => 1
 ) );
