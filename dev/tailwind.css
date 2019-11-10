@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, nav {
+    @apply font-display;
+}
+p, time {
+    @apply mb-4 font-body;
+}
+
+img {
+    @apply block;    
+}
+
+nav {
+    background-color: rgba(66, 153, 225, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.gradient {
+    mask: linear-gradient(90deg,#000 0,#000 90%,transparent);
+}
