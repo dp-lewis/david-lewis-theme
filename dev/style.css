@@ -11430,6 +11430,15 @@ nav {
           mask: linear-gradient(90deg,#000 0,#000 90%,transparent);
 }
 
+iframe {
+  max-width: 100%;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

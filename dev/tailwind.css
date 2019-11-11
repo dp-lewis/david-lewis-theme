@@ -28,3 +28,11 @@ nav {
 .gradient {
     mask: linear-gradient(90deg,#000 0,#000 90%,transparent);
 }
+
+iframe {
+    max-width: 100%;
+}
+
+.grayscale {
+    filter: grayscale(1);
+}
