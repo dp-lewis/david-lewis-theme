@@ -11,6 +11,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php wp_title( '|', true, 'right' ); ?> David Lewis</title>
 	<?php wp_head(); ?>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11491148-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-11491148-1');
+  </script>
 </head>
 <body class="antialiased pb-24 bg-gray-200 max-w-3xl m-auto">
 <nav class="fixed z-10 w-full bottom-0 left-0 flex items-center justify-center text-white">
