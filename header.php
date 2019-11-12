@@ -17,17 +17,12 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-11491148-1');
   </script>
 </head>
-<body class="antialiased pb-24 bg-gray-200 max-w-3xl m-auto">
-<nav class="fixed z-10 w-full bottom-0 left-0 flex items-center justify-center text-white">
-  <a href="/" class="p-4 md:p-8 hover:bg-blue-600">Home</a>
-  <a href="/#dev" class="p-4 md:p-8 hover:bg-blue-600">Dev & Design</a>
-  <a href="/#community" class="p-4 md:p-8 hover:bg-blue-600">Community</a>
+<body class="antialiased pb-24 bg-gray-200">
+<nav class="fixed md:relative z-10 w-full bottom-0 left-0 flex items-center justify-center text-white">
+  <a href="/" class="p-4 hover:bg-blue-600">Home</a>
+  <a href="/#dev" class="p-4 hover:bg-blue-600">Dev & Design</a>
+  <a href="/#community" class="p-4 hover:bg-blue-600">Community</a>
 </nav>
-
-<?php 
-// wp_nav_menu( array( 'theme_location' => 'header-menu' ) );
- ?>

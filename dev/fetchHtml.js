@@ -14,6 +14,9 @@ function saveHtmlToFile(fileName, html) {
 async function main() {
     const html = await getHtml('https://www.david-lewis.com');
     saveHtmlToFile("./dev/index.html", html);
+
+    const article = await getHtml('https://www.david-lewis.com/when-you-have-no-work-from-home-policy-start-here/');
+    saveHtmlToFile("./dev/article.html", article);
 }
 
 main();

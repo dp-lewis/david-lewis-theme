@@ -12,7 +12,7 @@ Version: 0.0.1
 h1, nav {
     @apply font-display;
 }
-p, time {
+time {
     @apply mb-4 font-body;
 }
 
@@ -35,4 +35,35 @@ iframe {
 
 .grayscale {
     filter: grayscale(1);
+}
+
+.post {
+    @apply font-body bg-white;    
+}
+
+.post p {
+    @apply mb-4;
+}
+.post ul {
+    @apply list-disc ml-8 mb-4;
+}
+
+.post ul {
+    @apply list-disc ml-8 mb-4;
+}
+
+.post ol {
+    @apply list-decimal ml-8 mb-4;
+}
+
+.post li {
+    @apply mb-2;
+}
+
+.post h2 {
+    @apply font-display text-xl mb-4;
+}
+
+.wp-block-image figcaption {
+    @apply text-xs p-2 mb-4 italic;
 }
