@@ -5,6 +5,7 @@ get_header();
     <div class="font-display uppercase text-center text-2xl">David Lewis</div>
     <div class="font-body text-center text-sm">Keep tech fun</div>
 </div>
+<div class="home  max-w-5xl m-auto">
 <?php
 $latestPost = get_posts( array(
     'posts_per_page' => 1
@@ -23,6 +24,34 @@ if ( have_posts() ) :
         // get_template_part( 'content', get_post_format() );
     endwhile;
 endif;
+
+// 44 - popular
+
+$popularPosts = get_posts( array(
+    'posts_per_page' => 5,
+    'category'       => 44
+) );
+
+if ( $popularPosts ) {
+?>
+<section class="pl-4 pr-4 mb-4">
+    <header>
+      <h1 class="text-xl mb-0">Popular posts</h1>
+    </header>
+    <div class="overflow-x-auto gradient">
+        <div class="flex flex-no-wrap">
+        <?php
+            foreach ( $popularPosts as $post ) {
+                setup_postdata( $post ); 
+                get_template_part( 'card', get_post_format() );
+            }
+            wp_reset_postdata();
+        ?>
+        </div>
+    </div>
+</section>
+<?php
+}
 
 $communityPosts = get_posts( array(
     'posts_per_page' => 10,
@@ -177,10 +206,12 @@ if ( $devdesignPosts ) {
 
   </ul>
 </section>
-
+       
 
 
 <?php
     }
-
+?>
+ </div>
+<?php
 get_footer();
